@@ -18,7 +18,7 @@ read_with_delimiter()
 
 {
 
-if ! tty -s
+if ! tty >/dev/null
 then
 	return 1
 fi
